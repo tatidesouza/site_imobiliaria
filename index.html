@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Início do documento HTML e definição do idioma principal como Português do
-Brasil -->
-
 <head>
-    <!-- Cabeçalho da página contendo informações e configurações essenciais -->
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres como UTF-8 para suportar acentos e
-caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a página para ser responsiva, ajustando a largura ao tamanho do
-dispositivo -->
     <link rel="icon" href="./img/favicon.ico">
-    <!-- Define o ícone da aba do navegador (favicon) -->
-
-    <title>Layout tipo posts com CSS</title>
-    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <title>Imobiliaria - Numero Um dos Brasileiros no Exterior</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Importa o arquivo de estilos externo (CSS) para estilizar a página -->
 </head>
-<!-- Fim da seção head -->
-
 <body>
-    <!-- Início do corpo do documento, onde todo o conteúdo visível da página será
-   colocado -->
+    <!-- Container principal dividindo sidebar e conteudo -->
     <div class="container">
-        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">Whatsapp</a>
-        <!-- Div principal que serve como um "container" para estruturar o layout da
-   página -->
-        
-            <!-- Barra lateral da página contendo a logo e o menu de navegação -->
+        <!-- Sidebar lateral com logo e menu -->
+        <aside class="sidebar">
+            <!-- Logo da imobiliaria -->
             <div class="logo">
-                <!-- Área reservada para exibir a logo do site -->
-                <img src="./img/logo_imob.png" alt="Logo">
-                <!-- Imagem da/img/ logo com um texto alternativo caso a imagem não carregue
-   -->
+                <img src="./img/logo_imob.png" alt="Logo da Imobiliaria">
             </div>
-            <h1 id="texto-secundario">Imobiliaria</h1>
-            <h1 id="texto-principal">NUMERO UM DOS BRASILEIROS NO EXTERIOR</h1>
-            <button id="botao-contato">FALAR COM TATIANE</button>
-        </div>
-        <!-- Fim da área de conteúdo -->
-    </div>
-    <!-- Fim do container principal -->
-</body>
-<!-- Fim do corpo do documento HTML -->
+            <!-- Menu de navegação -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Imóveis</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
 
+        <!-- Conteúdo principal com titulo, texto e botão -->
+        <main class="content">
+            <h1 id="texto-principal">Número Um dos Brasileiros no Exterior</h1>
+            <h2 id="texto-secundario">Sua imobiliária de confiança, onde quer que você esteja</h2>
+            <!-- Paragrafo explicativo fictício -->
+            <p class="descricao">
+                Fundada em 2005, nossa imobiliária se especializou em atender brasileiros que desejam investir no exterior.  
+                Com uma equipe bilíngue e atendimento personalizado, oferecemos os melhores imóveis com segurança e transparência.  
+                Seja para morar, investir ou comprar um imóvel de férias, estamos prontos para ajudar você a realizar seu sonho.
+            </p>
+            <!-- Botão para contato -->
+            <button id="botao-contato">Falar com Tatiane</button>
+        </main>
+    </div>
+
+    <!-- Link fixo para Whatsapp no canto inferior direito -->
+    <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" class="whatsapp-link">Whatsapp</a>
+</body>
 </html>
-<!-- Fim do documento HTML -->
